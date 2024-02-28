@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 25, 55);
+    font-family: "DM Sans", sans-serif;
+
+}
+
+.card {
+    width: 500px;
+    height: 350px;
+    background-color: rgb(15, 3, 26);
+    border-radius: 8%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.foto {
+    width: 280px;
+    height: 220px;
+    border-radius: 10%;
+    margin-top: 63px;
+    margin-left: -30px;
+    box-shadow: 0px 0px 10px #6d0280a4;
+}
+
+.profilo {
+    width: 350px;
+    height: 250px;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+
+.int {
+    color: blueviolet;
+}
+
+.int2 {
+    color: rgb(210, 189, 228);
+    font-size:medium;
+}
+
+.presentazione {
+    color: rgb(166, 155, 170);
+    font-size: small;
+}
+
+.follow {
+    all: initial;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.689);
+    border: 1px solid blueviolet;
+    border-radius: 1.5rem;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: "DM Sans", sans-serif;
+    transition: 0.4s ease;
+}
+
+.follow:hover{
+    background-color: rgba(243, 221, 243, 0.887);
+    transform: scale(1.06);
+    cursor:pointer;
+    color: blueviolet ;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 300px;
+        height: 360px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        border-radius: 60%;
+        margin: -70px 0 0 0;
+        width: 160px;
+        height: 160px;
+    }
+
+    .profilo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .presentazione {
+        text-align: center;
+        max-width: 250px;
+        margin: 0;
+    }
+
+    .int {
+        margin-bottom: 0;
+    }
+}
